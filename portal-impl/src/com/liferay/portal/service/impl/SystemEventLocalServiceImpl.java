@@ -102,7 +102,6 @@ public class SystemEventLocalServiceImpl
 					RestrictionsFactoryUtil.lt(
 						"createDate", calendar.getTime()));
 			});
-
 		actionableDynamicQuery.setPerformActionMethod(
 			systemEvent -> deleteSystemEvent((SystemEvent)systemEvent));
 
