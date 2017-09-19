@@ -61,20 +61,20 @@ public class VerifyResourcePermissions extends VerifyProcess {
 			Role role = RoleLocalServiceUtil.getRole(
 				companyId, RoleConstants.OWNER);
 
-			List<VerifyResourcedModelCallable> verifyResourcedModelRunnables =
+			List<VerifyResourcedModelCallable> verifyResourcedModelCallables =
 				new ArrayList<>(verifiableResourcedModels.length);
 
 			for (VerifiableResourcedModel verifiableResourcedModel :
 					verifiableResourcedModels) {
 
-				VerifyResourcedModelCallable verifyResourcedModelRunnable =
+				VerifyResourcedModelCallable verifyResourcedModelCallable =
 					new VerifyResourcedModelCallable(
 						role, verifiableResourcedModel);
 
-				verifyResourcedModelRunnables.add(verifyResourcedModelRunnable);
+				verifyResourcedModelCallables.add(verifyResourcedModelCallable);
 			}
 
-			doVerify(verifyResourcedModelRunnables);
+			doVerify(verifyResourcedModelCallables);
 
 			verifyLayout(role);
 		}

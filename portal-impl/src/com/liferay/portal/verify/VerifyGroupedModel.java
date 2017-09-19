@@ -50,7 +50,7 @@ public class VerifyGroupedModel extends VerifyProcess {
 			unverifiedTableNames.add(verifiableGroupedModel.getTableName());
 		}
 
-		List<VerifiableGroupedModelCallable> verifiableGroupedModelRunnables =
+		List<VerifiableGroupedModelCallable> verifiableGroupedModelCallables =
 			new ArrayList<>(unverifiedTableNames.size());
 
 		while (!unverifiedTableNames.isEmpty()) {
@@ -67,10 +67,11 @@ public class VerifyGroupedModel extends VerifyProcess {
 					continue;
 				}
 
-				VerifiableGroupedModelCallable verifyAuditedModelRunnable =
+				VerifiableGroupedModelCallable verifiableGroupedModelCallable =
 					new VerifiableGroupedModelCallable(verifiableGroupedModel);
 
-				verifiableGroupedModelRunnables.add(verifyAuditedModelRunnable);
+				verifiableGroupedModelCallables.add(
+					verifiableGroupedModelCallable);
 
 				unverifiedTableNames.remove(
 					verifiableGroupedModel.getTableName());
@@ -82,7 +83,7 @@ public class VerifyGroupedModel extends VerifyProcess {
 			}
 		}
 
-		doVerify(verifiableGroupedModelRunnables);
+		doVerify(verifiableGroupedModelCallables);
 	}
 
 	@Override

@@ -55,7 +55,7 @@ public class VerifyAuditedModel extends VerifyProcess {
 			unverifiedTableNames.add(verifiableAuditedModel.getTableName());
 		}
 
-		List<VerifyAuditedModelCallable> verifyAuditedModelRunnables =
+		List<VerifyAuditedModelCallable> verifyAuditedModelCallables =
 			new ArrayList<>(unverifiedTableNames.size());
 
 		while (!unverifiedTableNames.isEmpty()) {
@@ -72,10 +72,10 @@ public class VerifyAuditedModel extends VerifyProcess {
 					continue;
 				}
 
-				VerifyAuditedModelCallable verifyAuditedModelRunnable =
+				VerifyAuditedModelCallable verifyAuditedModelCallable =
 					new VerifyAuditedModelCallable(verifiableAuditedModel);
 
-				verifyAuditedModelRunnables.add(verifyAuditedModelRunnable);
+				verifyAuditedModelCallables.add(verifyAuditedModelCallable);
 
 				unverifiedTableNames.remove(
 					verifiableAuditedModel.getTableName());
@@ -87,7 +87,7 @@ public class VerifyAuditedModel extends VerifyProcess {
 			}
 		}
 
-		doVerify(verifyAuditedModelRunnables);
+		doVerify(verifyAuditedModelCallables);
 	}
 
 	@Override
