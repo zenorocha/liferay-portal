@@ -17,20 +17,26 @@
 <%@ include file="/init.jsp" %>
 
 <%
+List<Map<String, Object>> linearData = new ArrayList<>();
+
 Map<String, Object> linearDataCol1 = new HashMap<>();
-int[] linearDataCol1Data = {100, 20, 30};
 
 linearDataCol1.put("id", "data1");
+
+int[] linearDataCol1Data = {100, 20, 30};
+
 linearDataCol1.put("data", linearDataCol1Data);
 
+linearData.add(linearDataCol1);
+
 Map<String, Object> linearDataCol2 = new HashMap<>();
-int[] linearDataCol2Data = {20, 70, 100};
 
 linearDataCol2.put("id", "data2");
+
+int[] linearDataCol2Data = {20, 70, 100};
+
 linearDataCol2.put("data", linearDataCol2Data);
 
-List<Map<String, Object>> linearData = new ArrayList<>();
-linearData.add(linearDataCol1);
 linearData.add(linearDataCol2);
 %>
 
