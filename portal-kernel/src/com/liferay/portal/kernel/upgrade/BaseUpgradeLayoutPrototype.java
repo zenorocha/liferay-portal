@@ -46,9 +46,9 @@ public abstract class BaseUpgradeLayoutPrototype extends UpgradeProcess {
 				"content.Language", clazz.getClassLoader()),
 			resourceBundleLoader);
 
-		String sql = "select distinct companyId from ".concat(tableName);
-
-		sql = sql.concat(" where name = ? and description = ?");
+		String sql =
+			"select distinct companyId from " + tableName +
+				" where name = ? and description = ?";
 
 		try (PreparedStatement ps = connection.prepareStatement(sql)) {
 			ps.setString(1, name);
@@ -103,10 +103,9 @@ public abstract class BaseUpgradeLayoutPrototype extends UpgradeProcess {
 		String descriptionXml = _getLocalizationXml(
 			descriptionKey, "Description", companyId, resourceBundleLoader);
 
-		String sql = "update ".concat(tableName);
-
-		sql = sql.concat(
-			" set name = ?, description = ? where name = ? and description = ?");
+		String sql =
+			"update " + tableName + " set name = ?, description = ? where " +
+				"name = ? and description = ?";
 
 		try (PreparedStatement ps = connection.prepareStatement(sql)) {
 			ps.setString(1, nameXml);
