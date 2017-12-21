@@ -66,7 +66,7 @@ public abstract class BaseUpgradeLayoutPrototype extends UpgradeProcess {
 		}
 	}
 
-	private String _getLocalizationXml(
+	private String _getLocalizationXML(
 			String localizationMapKey, String xmlKey, long companyId,
 			ResourceBundleLoader resourceBundleLoader)
 		throws SQLException {
@@ -97,10 +97,9 @@ public abstract class BaseUpgradeLayoutPrototype extends UpgradeProcess {
 			String descriptionKey, long companyId)
 		throws SQLException {
 
-		String nameXml = _getLocalizationXml(
+		String nameXML = _getLocalizationXML(
 			nameKey, "Name", companyId, resourceBundleLoader);
-
-		String descriptionXml = _getLocalizationXml(
+		String descriptionXML = _getLocalizationXML(
 			descriptionKey, "Description", companyId, resourceBundleLoader);
 
 		String sql =
@@ -108,8 +107,8 @@ public abstract class BaseUpgradeLayoutPrototype extends UpgradeProcess {
 				"name = ? and description = ?";
 
 		try (PreparedStatement ps = connection.prepareStatement(sql)) {
-			ps.setString(1, nameXml);
-			ps.setString(2, descriptionXml);
+			ps.setString(1, nameXML);
+			ps.setString(2, descriptionXML);
 			ps.setString(3, name);
 			ps.setString(4, description);
 
