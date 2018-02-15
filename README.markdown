@@ -1,13 +1,13 @@
 # Liferay Portal
 
 [Liferay
-Portal](http://www.liferay.com/community/liferay-projects/liferay-portal) is an
+Portal](https://community.liferay.com/projects/portal) is an
 open source enterprise web platform for building business solutions that deliver
 immediate results and long-term value. Liferay Portal started out as a personal
 development project in 2000 and was open sourced in 2001.
 
 To get started, check out the project's community homepage at
-[http://liferay.org](http://liferay.org)!
+[community.liferay.com](https://community.liferay.com)!
 
 ## Latest Release Details
 
@@ -26,7 +26,7 @@ developers.
 *   Business forms and workflow
 *   Collaboration features such as blogs, wikis, and social networking
 *   Consistent and powerful Lexicon user experience
-*   Integrated development environment using [Liferay IDE](https://www.liferay.com/community/liferay-projects/liferay-ide/overview)
+*   Integrated development environment using [Liferay IDE](https://community.liferay.com/projects/ide)
 
 For more details on these and other features, please refer to the [user
 guide](https://dev.liferay.com/discover/portal) on the [Liferay Developer
