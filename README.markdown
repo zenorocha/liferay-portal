@@ -106,13 +106,13 @@ following [Liferay's Blog Stream](http://www.liferay.com/community/blogs).
 Do you have questions? Ask them on our very active
 [forums](http://www.liferay.com/community/forums)!
 
-### IRC Channel
+### Chat
 
-Tune into Liferay's Internet Relay Chat (IRC) channel.
+Join the conversation on Liferay's Community Chat.
 
-Server: `irc.freenode.net`
-
-Channel: `#liferay`
+* Get your invite: [community-chat.liferay.com](https://community-chat.liferay.com)
+* Enter the chat: [liferay-community.slack.com](https://liferay-community.slack.com)
+* Channel: `#portal`
 
 ## Contributing
 
