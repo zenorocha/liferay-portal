@@ -47,8 +47,8 @@ It includes details on using the repositories and building the software.
 
 ## Liferay Developer Network
 
-The [Liferay Developer Network](https://dev.liferay.com) \(LDN\) at
-<http://dev.liferay.com>, is the best place to learn about Liferay. It has over
+The [Liferay Developer Network](https://dev.liferay.com) (LDN),
+is the best place to learn about Liferay. It has over
 200 tutorials, guided learning, and much more.
 
 LDN's [Learning Paths](https://dev.liferay.com/develop/learning-paths) are a
@@ -58,7 +58,7 @@ to dive into [Tutorials](https://dev.liferay.com/develop/tutorials) for details
 on leveraging Liferay's technologies and frameworks. If you create apps that you
 want to share or sell, you can read LDN's
 [Distribute](https://dev.liferay.com/distribute) section to learn how to publish
-the apps to the Liferay Marketplace.
+the apps to the [Liferay Marketplace](https://web.liferay.com/marketplace).
 
 The Liferay Developer Network is not only your home for Liferay development, but
 it's also your place to [participate](https://dev.liferay.com/participate) in
@@ -87,17 +87,18 @@ questions, and connect with other Liferay community members.
 
 Follow us on Twitter:
 
--   [@Liferay](http://twitter.com/Liferay) tweets the Liferay's latest
+-   [@Liferay](http://twitter.com/liferay) tweets Liferay's latest
     announcements
 
--   [@Liferaydocs](http://twitter.com/Liferaydocs) tweets about new articles
+-   [@LiferayDocs](http://twitter.com/liferaydocs) tweets about new articles
+    and tutorials
 
--   [@Liferayeng](http://twitter.com/Liferayeng) tweets from the core
+-   [@LiferayEng](http://twitter.com/liferayeng) tweets from the core
     engineering team
 
 ### Blog
 
-Read details on announcements, engage in discussions, and learn more by
+Read our announcements, engage in discussions, and learn more by
 following [Liferay's Blog Stream](http://www.liferay.com/community/blogs).
 
 ### Forum
